@@ -48,13 +48,106 @@ botaodoaparecimentooo.addEventListener('click', function () {
     
         if (document.body.contains(barra2dainfo)) {
             barra2dainfo.remove()
-            botaodoaparecimentooo.textContent = 'Remover';
+            botaodoaparecimentooo.textContent = 'Mostrar info 2';
         } else{
             document.body.appendChild(barra2dainfo);
             barra2dainfo.innerHTML = '<h2>Objetivo 2 </h2><hr> <br> <p>Nosso segundo objetivo e conseguir mais colaboradores e conseguir fazer um exelente serviço com a saude mental dos nossos clientes. <br><br> <p>Nos queremos mais sucesso no mercado e um reconhecimento do governo do estado de sao joao'
-            botaodoaparecimentooo.textContent = 'Mostrar info 2';
+            botaodoaparecimentooo.textContent = 'Remover';
         }
 
 })
+
+
+
+
+
+
+// barra 3 
+
+
+
+const barratrimedimencional = document.createElement('fieldset');
+
+const botaopromaxxx = document.createElement('button');
+
+
+botaopromaxxx.addEventListener('click', function () {
+        if (document.body.contains(barratrimedimencional)) {
+            barratrimedimencional.remove()
+            botaopromaxxx.textContent = 'mostrar informaçao'
+        }   else{
+            document.appendChild(barratrimedimencional);
+            barratrimedimencional.innerHTML = '<h2> obejetivo</h2> <hr> <br><br> <p>'
+        }
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
