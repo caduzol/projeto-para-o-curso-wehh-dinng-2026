@@ -1,0 +1,560 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+
+/* cor titulo */
+
+
+
+.cima header{
+    background-color: rgba(2, 2, 66, 0.815);
+    padding: 220px;
+}
+
+
+/* Titulo*/
+
+
+.cima h2{
+    position: absolute;
+    transform: translate(-50% -50%);
+    left: 7%;
+    top: 15%;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+#cor{
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 34%;
+    left: 14%;
+    font-style: italic;
+    color: rgb(0, 255, 242);
+}
+
+
+
+
+
+.info p{
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 11%;
+    left: 8%;
+    color:bisque;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+
+/* Foto */
+
+.fotto-bara img{
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 15%;
+    left: 60%;
+    height: 260px;
+    width: 320px;
+    border-radius: 12px;
+    
+}
+
+
+
+
+/* cima informaçao */
+
+
+.info li{
+    display: flex;
+}
+
+
+.info ul{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.info a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.6s ease;
+}
+
+
+
+.text-1:hover{
+    transform: translateX(4px);
+    border-style: hidden;
+}
+
+
+
+.info nav{
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 2%;
+    left: 45%;
+}
+
+
+
+
+/* Info pt 2 */
+
+.info-2-pt-2 nav{
+    padding: 210px;
+    background-color:rgb(220, 220, 220);
+}
+
+
+
+
+ /* titulo animado */
+
+ .info-3-pt-2 h2{
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 77%;
+    left:10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    transition:0.3s ease;
+ }
+
+
+ .info-2-pt-2:hover h2{
+    transform: translate(3px);
+    cursor: normal;
+ }
+
+
+
+
+.info-3-pt-2 p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    transform: translate(-50% -50%);
+    left: 10%;
+    top: 89%;
+} 
+
+
+
+
+/* imagem sobre nos */
+
+
+
+.img-do-sobre-nos img{
+    width: 390px;
+    height: 260px;
+    position: absolute;
+    transform: translate(50% -50%);
+    top: 85%;
+    left: 58%;
+    border-radius: 23px;
+}
+
+
+
+.foto-dos-proficionais nav {
+    background-color: rgb(178, 171, 171);
+    padding:240px;
+}
+
+
+
+
+.foto-1-do-colabordor img {
+    width: 260px;
+    height: 190px;
+    position: absolute;
+    transform: translate(50% 50%);
+    top: 160%;
+    left: 10%;
+    border-radius: 22PX;
+    transition: 0.3s ease;
+}
+
+
+.foto-2-do-colaborador img{
+    width: 260px;
+    height: 190px;
+    position: absolute;
+    transform: translate(50% 50%);
+    top: 160%;
+    left: 40%;
+    border-radius: 22PX;
+    transition: 0.3s ease;
+}
+
+
+
+/* Info da foto */
+
+
+
+.foto-1-do-colabordor h2{
+    opacity: 0;
+    transition: 0.3s ease;
+    font-family:Arial, Helvetica, sans-serif;
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 180%;
+    left: 12%;
+}
+
+
+.foto-1-do-colabordor:hover h2{
+    opacity: 1;
+    transform: translate(4px);
+
+}
+
+
+.foto-1-do-colabordor img:hover{
+    box-shadow: 1px 1px black;
+    transform:translate(4px);
+}
+
+
+
+
+/* Foto 2 info */
+
+
+
+.foto-2-do-colaborador h2{
+    opacity: 0;
+    transition: 0.3s ease;
+    font-family:Arial, Helvetica, sans-serif;
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 180%;
+    left: 42%;
+}
+
+
+.foto-2-do-colaborador:hover h2{
+     opacity: 1;
+     transform: translate(4px);
+
+}
+
+
+
+.foto-2-do-colaborador img:hover{
+    box-shadow: 1px 1px black;
+    transform:translate(4px);
+}
+
+
+
+
+
+/* foto 3 dos colaboradores */
+
+
+
+.foto-3-do-colaborador img{
+    width: 260px;
+    height: 190px;
+    position: absolute;
+    transform: translate(50% 50%);
+    top: 160%;
+    left: 70%;
+    border-radius: 22PX;
+    transition: 0.3s ease;
+}
+
+
+
+.foto-3-do-colaborador h2{
+    opacity: 0;
+    transition: 0.3s ease;
+    font-family:Arial, Helvetica, sans-serif;
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 180%;
+    left: 72%;
+}
+
+
+
+.foto-3-do-colaborador:hover h2{
+    opacity: 1;
+    transform: translate(4px);
+
+}
+
+
+.foto-3-do-colaborador img:hover{
+    box-shadow: 1px 1px black;
+    transform:translate(4px);
+}
+
+
+
+
+/* Info do palagrafo */
+
+
+.foto-3-do-colaborador p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    position:absolute;
+    transform:translate(-50% -50%);
+    top: 192%;
+    left: 72%;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+.foto-3-do-colaborador:hover p{
+    opacity: 1;
+    transform: translate(4px);
+}
+
+
+/* testo da foto 2 */
+
+
+.foto-2-do-colaborador p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    position:absolute;
+    transform:translate(-50% -50%);
+    top: 192%;
+    left: 41%;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+
+.foto-2-do-colaborador:hover p{
+    opacity: 1;
+    transform: translate(4px);
+}
+
+
+
+
+/* Foto 1 informaçao */
+
+.foto-1-do-colabordor p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    position:absolute;
+    transform:translate(-50% -50%);
+    top: 192%;
+    left: 10%;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+
+.foto-1-do-colabordor:hover p{
+    opacity: 1;
+    transform: translate(4px);
+}
+
+
+/* Titulo em cima*/
+
+
+.titulo-imgem h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:italic;
+    position:absolute;
+    transform:translate(-50% -50%);
+    top: 140%;
+    left: 41%;
+}
+
+
+
+/* Informaçao das metas da empresa*/
+
+.cor-fundo-meta nav{
+    background-color: rgb(255, 249, 249);
+    padding: 380px;
+}
+
+
+
+/* MEtas titulo*/
+
+
+.metas-tittulos h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-variant: inherit;
+    position: absolute;
+    top: 220%;
+    left: 40%;
+}
+
+
+.metas-tittulos p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top:227%;
+    left: 40%;
+}
+
+
+
+
+/* Fiedset 1 matas */
+
+
+.barra-das-metas-1-fieldset-h2 fieldset{
+    position:absolute;
+    top: 240%;
+    left:10%;
+    width:180px;
+    height: 420px;
+    padding:20px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+
+
+.barra-das-metas-1-fieldset-h2 h2{
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/* Palagrafo informaçao */
+
+
+.barra-das-metas-1-fieldset-h2 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:15px;
+}
+
+
+/* Animaçao barra */
+
+.barra-das-metas-1-fieldset-h2:hover fieldset{
+    transform: translate(3px);
+}
+
+
+
+
+/* Barra 2 das informaçao */
+
+
+.metas-barra-2 fieldset{
+    position:absolute;
+    top: 240%;
+    left:40%;
+    width:180px;
+    height: 420px;
+    padding:20px;
+    border-radius: 12px;
+}
+
+
+
+
+.metas-barra-2 h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Palagrafo da barra 2 */
+
+.metas-barra-2 p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* Barra 3 do fieldset */
+
+
+
+
+.barra-3-das-metas fieldset{
+    position:absolute;
+    top: 240%;
+    left:70%;
+    width:180px;
+    height: 420px;
+    padding:20px;
+    border-radius: 12px;
+}
+
+
+.barra-3-das-metas h2{
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+
+.barra-3-das-metas p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+
+/* objetivo inicio agora haha*/
+
+.cor-de-fundo-objetivo{
+    background-color: rgb(124, 114, 114);
+    padding: 320px;
+}
+
+
+
+
+/* fiedset do javinha */
+
+
+#barrainfo {
+    height: 290px;
+    position: absolute;
+    top: 390%;
+    left: 10%;
+    width: 220px;
+    background-color: rgb(148, 139, 139);
+    border-radius: 12px;
+    border-color: transparent;
+    padding: 12px;
+}
+
+
+#barrainfo h2{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* UL da barra de informaçao do objetivo*/
+
+#barrainfo li, p{
+    margin: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
