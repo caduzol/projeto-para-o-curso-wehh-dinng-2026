@@ -1,153 +1,86 @@
-const barra = document.createElement('fieldset');
-barra.id = 'barrainfo';
+document.addEventListener('DOMContentLoaded', () => {
 
+  // ===== Scroll reveal animation =====
+  const elementosReveal = document.querySelectorAll('.reveal');
 
-
-
-
-
-const botaodoaparecimento = document.getElementById('invocardragao');
-
-botaodoaparecimento.addEventListener('click', function () {
-
-    
-        if (document.body.contains(barra)) {
-            barra.remove()
-            botaodoaparecimento.textContent = 'Mostrar'
-            
-        }else{
-            document.body.appendChild(barra);
-              barra.innerHTML = '<h2>Objetivo 1</h2> <hr> <br> <p>Nosso objetivo 1 e o principal, porque tem coisas importantes a se compuprir, como:<p> <br> <ul><li>Cumprir a meta fienceira<br><br><li>Bater a meta de colaboradores<ul><ul><br><li>E tambem agredecer os parceiros<br><br><p>Esses sao os nossos maiores objetivos, como nos proximos.'
-            botaodoaparecimento.textContent = 'Remover'  
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entradas) => {
+      entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add('ativo');
+          observer.unobserve(entrada.target);
         }
-
-})
-
-
-
-
-
-// Barra 2 do fieldset
-
-
-const barra2dainfo = document.createElement('fieldset');
-barra2dainfo.id = 'barrainfo2';
-
-
-const botaodoaparecimentooo = document.createElement('button');
-botaodoaparecimentooo.id = 'botaodainvocacaaos';
-
-botaodoaparecimentooo.innerHTML = 'Aparecer';
-
-document.body.appendChild(botaodoaparecimentooo);
-
-
-
-
-botaodoaparecimentooo.addEventListener('click', function () {
-    
-        if (document.body.contains(barra2dainfo)) {
-            barra2dainfo.remove()
-            botaodoaparecimentooo.textContent = 'Mostrar info 2';
-        } else{
-            document.body.appendChild(barra2dainfo);
-            barra2dainfo.innerHTML = '<h2>Objetivo 2 </h2><hr> <br> <p>Nosso segundo objetivo e conseguir mais colaboradores e conseguir fazer um exelente serviço com a saude mental dos nossos clientes. <br><br> <p>Nos queremos mais sucesso no mercado e um reconhecimento do governo do estado de sao joao'
-            botaodoaparecimentooo.textContent = 'Remover';
-        }
-
-})
-
-
-
-
-
-
-// barra 3 
-
-
-
-const barratrimedimencional = document.createElement('fieldset');
-
-const botaopromaxxx = document.createElement('button');
-
-
-botaopromaxxx.addEventListener('click', function () {
-        if (document.body.contains(barratrimedimencional)) {
-            barratrimedimencional.remove()
-            botaopromaxxx.textContent = 'mostrar informaçao'
-        }   else{
-            document.appendChild(barratrimedimencional);
-            barratrimedimencional.innerHTML = '<h2> obejetivo</h2> <hr> <br><br> <p>'
-        }
-    
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      });
+    }, { threshold: 0.15 });
+
+    elementosReveal.forEach((el) => observer.observe(el));
+  }
+
+  // ===== Função genérica para os painéis de objetivo =====
+  function configurarPainel(idBotao, idPainel, textoAberto, textoFechado, conteudoHTML) {
+    const botao = document.getElementById(idBotao);
+    const painel = document.getElementById(idPainel);
+
+    if (!botao) {
+      console.error(`Botão não encontrado: #${idBotao}`);
+      return;
+    }
+
+    if (!painel) {
+      console.error(`Painel não encontrado: #${idPainel}`);
+      return;
+    }
+
+    botao.addEventListener('click', () => {
+      const estaAberto = painel.classList.contains('aberto');
+
+      if (estaAberto) {
+        painel.classList.remove('aberto');
+        painel.innerHTML = '';
+        botao.textContent = textoFechado;
+      } else {
+        painel.innerHTML = conteudoHTML;
+        painel.classList.add('aberto');
+        botao.textContent = textoAberto;
+      }
+    });
+  }
+
+  configurarPainel(
+    'invocardragao',
+    'barrainfo',
+    'Remover',
+    'Clique para saber o objetivo 1',
+    `<h3>Objetivo 1</h3>
+     <hr>
+     <p>Nosso objetivo 1 é o principal, porque tem coisas importantes a se cumprir, como:</p>
+     <ul>
+       <li>Cumprir a meta financeira</li>
+       <li>Bater a meta de colaboradores</li>
+       <li>Agradecer os parceiros</li>
+     </ul>
+     <p>Esses são os nossos maiores objetivos, como os próximos.</p>`
+  );
+
+  configurarPainel(
+    'botaodainvocacaaos',
+    'barrainfo2',
+    'Remover',
+    'Aparecer',
+    `<h3>Objetivo 2</h3>
+     <hr>
+     <p>Nosso segundo objetivo é conseguir mais colaboradores e realizar um excelente serviço com a saúde mental dos nossos clientes.</p>
+     <p>Queremos mais sucesso no mercado e reconhecimento do governo do estado.</p>`
+  );
+
+  configurarPainel(
+    'botaopromaxxx',
+    'barrainfo3',
+    'Remover',
+    'Mostrar informação',
+    `<h3>Objetivo 3</h3>
+     <hr>
+     <p>Nosso terceiro objetivo é expandir nossa equipe de psicólogos parceiros e ampliar o atendimento para novas regiões.</p>`
+  );
+
+});

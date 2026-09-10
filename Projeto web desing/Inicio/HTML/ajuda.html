@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/ajuda.css">
+</head>
+<body>
+      <!-- ===== ASSISTENTE DE IA ===== -->
+  <div id="assistente-container">
+
+    <!-- Botão flutuante -->
+    <button
+      id="assistente-botao"
+      type="button"
+      aria-label="Abrir assistente"
+      aria-expanded="false"
+      aria-controls="assistente-chat"
+    >
+      <span class="assistente-icone">💬</span>
+      <span class="assistente-texto">Posso ajudar?</span>
+    </button>
+
+    <!-- Janela do chat -->
+    <div
+      id="assistente-chat"
+      class="assistente-chat"
+      aria-hidden="true"
+    >
+
+      <!-- Cabeçalho -->
+      <div class="assistente-header">
+        <div class="assistente-header-info">
+          <div class="assistente-avatar">🤖</div>
+
+          <div>
+            <h3>Assistente Psigologia</h3>
+            <span>
+              <span class="status-online"></span>
+              Online
+            </span>
+          </div>
+        </div>
+
+        <button
+          id="assistente-fechar"
+          type="button"
+          aria-label="Fechar assistente"
+        >
+          ×
+        </button>
+      </div>
+
+      <!-- Mensagens -->
+      <div
+        id="assistente-mensagens"
+        class="assistente-mensagens"
+        role="log"
+        aria-live="polite"
+      >
+        <div class="mensagem mensagem-ia">
+          <div class="mensagem-avatar">🤖</div>
+
+          <div class="mensagem-conteudo">
+            Olá! 👋<br><br>
+            Eu sou o assistente da Psigologia.
+            Posso ajudar você a conhecer nossos serviços,
+            encontrar informações ou tirar dúvidas.
+          </div>
+        </div>
+      </div>
+
+      <!-- Campo de mensagem -->
+      <form id="assistente-form" class="assistente-input-area">
+
+        <input
+          type="text"
+          id="assistente-input"
+          placeholder="Digite sua mensagem..."
+          autocomplete="off"
+          aria-label="Digite sua mensagem"
+        >
+
+        <button
+          type="submit"
+          id="assistente-enviar"
+          aria-label="Enviar mensagem"
+        >
+          ➤
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- Scripts do site -->
+  <script src="../Javascripit/javainicio.js"></script>
+
+  <!-- JavaScript do assistente -->
+  <script src="../Javascripit/assistente.js"></script>
+
+</body>
+</html>

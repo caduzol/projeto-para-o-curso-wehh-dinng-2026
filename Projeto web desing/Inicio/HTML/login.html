@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Psigologia</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body class="login-body">
+
+  <div class="login-wrapper">
+    <div class="login-card reveal ativo">
+      <h1>Bem-vindo de volta a<br><span id="cor">Psigologia</span></h1>
+
+      <div class="tabs">
+        <button class="tab-btn ativo" data-tab="login">Entrar</button>
+        <button class="tab-btn" data-tab="cadastro">Criar conta</button>
+      </div>
+
+      <form id="formLogin" class="form-tab ativo">
+        <label for="loginEmail">E-mail</label>
+        <input type="email" id="loginEmail" name="email" required placeholder="seuemail@exemplo.com">
+
+        <label for="loginSenha">Senha</label>
+        <input type="password" id="loginSenha" name="senha" required placeholder="••••••••">
+
+        <button type="submit" class="btn-entrar">Entrar</button>
+        <p class="msg" id="msgLogin"></p>
+      </form>
+
+      <form id="formCadastro" class="form-tab">
+        <label for="cadNome">Nome</label>
+        <input type="text" id="cadNome" name="nome" required placeholder="Seu nome">
+
+        <label for="cadEmail">E-mail</label>
+        <input type="email" id="cadEmail" name="email" required placeholder="seuemail@exemplo.com">
+
+        <label for="cadSenha">Senha</label>
+        <input type="password" id="cadSenha" name="senha" required minlength="6" placeholder="mínimo 6 caracteres">
+
+        <button type="submit" class="btn-entrar">Criar conta</button>
+        <p class="msg" id="msgCadastro"></p>
+      </form>
+
+      <a href="index.html" class="voltar">&larr; Voltar para o site</a>
+    </div>
+  </div>
+
+  <script src="../Javascripit/login.js"></script>
+</body>
+</html>
